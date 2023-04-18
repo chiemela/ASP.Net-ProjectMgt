@@ -268,6 +268,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5yb2xsbWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/chiem/source/repos/ASP.Net-ProjectMgt/FullStack/Views/Feedbacks/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chiem/source/repos/ASP.Net-ProjectMgt/FullStack/Views/Feedbacks/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chiem/source/repos/ASP.Net-ProjectMgt/FullStack/Views/Feedbacks/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chiem/source/repos/ASP.Net-ProjectMgt/FullStack/Views/Feedbacks/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chiem/source/repos/ASP.Net-ProjectMgt/FullStack/Views/Feedbacks/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/chiem/source/repos/ASP.Net-ProjectMgt/FullStack/Views/Feedback/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -318,6 +338,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/chiem/source/repos/ASP.Net-ProjectMgt/FullStack/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chiem/source/repos/ASP.Net-ProjectMgt/FullStack/Views/Modules/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kdWxlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chiem/source/repos/ASP.Net-ProjectMgt/FullStack/Views/Modules/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kdWxlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chiem/source/repos/ASP.Net-ProjectMgt/FullStack/Views/Modules/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kdWxlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chiem/source/repos/ASP.Net-ProjectMgt/FullStack/Views/Modules/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kdWxlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chiem/source/repos/ASP.Net-ProjectMgt/FullStack/Views/Modules/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kdWxlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/chiem/source/repos/ASP.Net-ProjectMgt/FullStack/Views/Module/Create.cshtml]
@@ -462,6 +502,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/chiem/source/repos/ASP.Net-ProjectMgt/FullStack/Views/UserModules/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlck1vZHVsZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chiem/source/repos/ASP.Net-ProjectMgt/FullStack/Views/UserModule/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlck1vZHVsZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chiem/source/repos/ASP.Net-ProjectMgt/FullStack/Views/UserModule/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlck1vZHVsZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chiem/source/repos/ASP.Net-ProjectMgt/FullStack/Views/UserModule/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlck1vZHVsZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chiem/source/repos/ASP.Net-ProjectMgt/FullStack/Views/UserModule/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlck1vZHVsZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chiem/source/repos/ASP.Net-ProjectMgt/FullStack/Views/UserModule/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlck1vZHVsZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/chiem/source/repos/ASP.Net-ProjectMgt/FullStack/Views/User/Delete.cshtml]

@@ -153,6 +153,46 @@ namespace FullStack.Migrations
                     b.ToTable("Feedback");
                 });
 
+            modelBuilder.Entity("FullStack.Models.Feedbacks", b =>
+                {
+                    b.Property<int>("FeedbacksID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FeedbacksID"));
+
+                    b.Property<DateTime?>("CreatedDateTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Grade")
+                        .HasColumnType("int");
+
+                    b.Property<string>("LecturerComment")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LecturerEmailID")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ModulesID")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("StudentEmailID")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("FeedbacksID");
+
+                    b.HasIndex("ModulesID");
+
+                    b.ToTable("NewFeedbacks");
+                });
+
             modelBuilder.Entity("FullStack.Models.Module", b =>
                 {
                     b.Property<int>("ModuleID")
@@ -190,6 +230,47 @@ namespace FullStack.Migrations
                     b.HasKey("ModuleID");
 
                     b.ToTable("Module");
+                });
+
+            modelBuilder.Entity("FullStack.Models.Modules", b =>
+                {
+                    b.Property<string>("ModulesID")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime?>("CreatedDateTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreditRating")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ModuleLevel")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ModuleSpecification")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ModuleSummary")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ModuleTitle")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("School")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TotalStudyHours")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ModulesID");
+
+                    b.ToTable("NewModules");
                 });
 
             modelBuilder.Entity("FullStack.Models.Notifications", b =>
@@ -286,6 +367,29 @@ namespace FullStack.Migrations
                     b.HasIndex("UserModulesID");
 
                     b.ToTable("Tasks");
+                });
+
+            modelBuilder.Entity("FullStack.Models.UserModule", b =>
+                {
+                    b.Property<int>("UserModulesID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserModulesID"));
+
+                    b.Property<int>("EnrollmentID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ModulesID")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("UserModulesID");
+
+                    b.HasIndex("EnrollmentID");
+
+                    b.HasIndex("ModulesID");
+
+                    b.ToTable("NewUserModule");
                 });
 
             modelBuilder.Entity("FullStack.Models.UserModules", b =>
@@ -558,6 +662,15 @@ namespace FullStack.Migrations
                     b.Navigation("UserModules");
                 });
 
+            modelBuilder.Entity("FullStack.Models.Feedbacks", b =>
+                {
+                    b.HasOne("FullStack.Models.Modules", "Modules")
+                        .WithMany()
+                        .HasForeignKey("ModulesID");
+
+                    b.Navigation("Modules");
+                });
+
             modelBuilder.Entity("FullStack.Models.Notifications", b =>
                 {
                     b.HasOne("FullStack.Models.UserModules", "UserModules")
@@ -578,6 +691,23 @@ namespace FullStack.Migrations
                         .IsRequired();
 
                     b.Navigation("UserModules");
+                });
+
+            modelBuilder.Entity("FullStack.Models.UserModule", b =>
+                {
+                    b.HasOne("FullStack.Models.Enrollment", "Enrollment")
+                        .WithMany()
+                        .HasForeignKey("EnrollmentID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("FullStack.Models.Modules", "Modules")
+                        .WithMany()
+                        .HasForeignKey("ModulesID");
+
+                    b.Navigation("Enrollment");
+
+                    b.Navigation("Modules");
                 });
 
             modelBuilder.Entity("FullStack.Models.UserModules", b =>
