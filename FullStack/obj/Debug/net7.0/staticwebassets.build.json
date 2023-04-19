@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RHtPJN60N2I9WJVxLiVqic1TdtPirs9WWamAnvQdlcE=",
+  "Hash": "rIx5vMx09P57O1ZhkVwVriUAG6cIpUoIa97fC1iLGP8=",
   "Source": "FullStack",
   "BasePath": "_content/FullStack",
   "Mode": "Default",
@@ -82210,6 +82210,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\upload\\fda8049a-93e1-42b9-a939-18c2aaa77958_chiemela-CV.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\chiem\\source\\repos\\FullStack-main\\FullStack\\wwwroot\\Welcome.png",
+      "SourceId": "FullStack",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\chiem\\source\\repos\\FullStack-main\\FullStack\\wwwroot\\",
+      "BasePath": "_content/FullStack",
+      "RelativePath": "Welcome.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Welcome.png"
     }
   ]
 }

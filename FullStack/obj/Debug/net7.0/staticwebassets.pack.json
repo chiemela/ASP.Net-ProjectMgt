@@ -385,6 +385,10 @@
       "PackagePath": "staticwebassets\\README.md"
     },
     {
+      "Id": "C:\\Users\\chiem\\source\\repos\\FullStack-main\\FullStack\\wwwroot\\Welcome.png",
+      "PackagePath": "staticwebassets\\Welcome.png"
+    },
+    {
       "Id": "C:\\Users\\chiem\\source\\repos\\FullStack-main\\FullStack\\wwwroot\\build\\config\\.eslintrc.json",
       "PackagePath": "staticwebassets\\build\\config\\.eslintrc.json"
     },

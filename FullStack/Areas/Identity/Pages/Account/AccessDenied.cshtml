@@ -85,7 +85,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-controller="Assessment" asp-action="Index">
+                            <a class="nav-link" asp-controller="AttachmentFile" asp-action="Index">
                                 <i class="nav-icon fa-solid fa-file-pen"></i>
                                 <p>
                                     Assessment
@@ -93,7 +93,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-controller="Feedback" asp-action="Index">
+                            <a class="nav-link" asp-controller="Feedbacks" asp-action="Index">
                                 <i class="nav-icon fa-sharp fa-solid fa-comments"></i>
                                 <p>
                                     Feedback
@@ -124,33 +124,53 @@
                                 </p>
                             </a>
                         </li>
+                        @if (User.IsInRole("Admin"))
+                        {
+                        // this section is accessible to admin only
+                            <li class="nav-header">ADMIN AREA</li>
 
-                        <li class="nav-header">ADMIN AREA</li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="AppRoles" asp-action="Index">
+                                    <i class="nav-icon fa-sharp fa-solid fa-user-shield"></i>
+                                    <p>
+                                        Role
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Enrollment" asp-action="Index">
+                                    <i class="nav-icon fa-solid fa-scroll"></i>
+                                    <p>
+                                        Enrollment
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="User" asp-action="Index">
+                                    <i class="nav-icon fa-solid fa-users"></i>
+                                    <p>
+                                        Users
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Modules" asp-action="Index">
+                                    <i class="nav-icon fa-solid fa-book"></i>
+                                    <p>
+                                        Modules
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="UserModule" asp-action="Index">
+                                    <i class="nav-icon fa-solid fa-address-card"></i>
+                                    <p>
+                                        User Modules
+                                    </p>
+                                </a>
+                            </li>
+                        }
 
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="AppRoles" asp-action="Index">
-                                <i class="nav-icon fa-sharp fa-solid fa-user-shield"></i>
-                                <p>
-                                    Role
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="Enrollment" asp-action="Index">
-                                <i class="nav-icon fa-solid fa-scroll"></i>
-                                <p>
-                                    Enrollment
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="Users" asp-action="Index">
-                                <i class="nav-icon fa-solid fa-users"></i>
-                                <p>
-                                    Users
-                                </p>
-                            </a>
-                        </li>
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->

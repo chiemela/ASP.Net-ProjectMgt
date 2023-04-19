@@ -11,13 +11,13 @@ namespace FullStack.Data
             
         }
 
-        public DbSet<SalesLeadEntity> SalesLead { get; set; }
+        public DbSet<SalesLeadEntity> SalesLead { get; set; }   // for testing only
         public DbSet<ApplicationUser> ApplicationUser { get; set; }
-        public DbSet<Module> Module { get; set; }
+        public DbSet<Module> Module { get; set; }   // for testing only
         public DbSet<Modules> NewModules { get; set; }
         public DbSet<Enrollment> Enrollment { get; set; }
-        public DbSet<Assessment> Assessment { get; set; }
-        public DbSet<Feedback> Feedback { get; set; }
+        public DbSet<Assessment> Assessment { get; set; }   // for testing only
+        public DbSet<Feedback> Feedback { get; set; }   // for testing only
         public DbSet<Feedbacks> NewFeedbacks { get; set; }
         public DbSet<Notifications> Notifications { get; set; }
         public DbSet<UserModule> NewUserModule { get; set; }
